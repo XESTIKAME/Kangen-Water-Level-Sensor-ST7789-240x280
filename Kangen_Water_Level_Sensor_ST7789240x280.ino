@@ -298,7 +298,6 @@ void printLocalTime() {                                                     // D
         break;
     }
   }
-
 }
 
 
