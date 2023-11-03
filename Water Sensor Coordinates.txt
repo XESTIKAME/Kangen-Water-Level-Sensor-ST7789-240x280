@@ -1,0 +1,35 @@
+if (waterSensorState1 == HIGH) {
+    screenNeedsUpdate = true;
+    tft.fillRect(2, 252, 43, 23, BLACK);                    // CLEARS THE FIRST WATER METER
+  }
+    else if (waterSensorState1 == HIGH) {
+    screenNeedsUpdate = true;
+  }
+  if (screenNeedsUpdate) {
+    if (waterSensorState1 == LOW) {                         // FILLS THE FIRST WATER METER
+      tft.fillRect(0, 250, 47, 27, GREEN);
+      }
+  if (waterSensorState2 == HIGH) {
+    tft.fillRect(51, 252, 43, 23, BLACK);                   // CLEARS THE SECOND WATER METER
+    }
+    else if (waterSensorState2 == LOW) {
+    tft.fillRect(49, 250, 47, 27, GREENYELLOW);             // FILLS THE SECOND WATER METER
+    } 
+  if (waterSensorState3 == HIGH){
+    tft.fillRect(100, 252, 43, 23, BLACK);                  // CLEARS THE THIRS WATER METER
+    }
+    else if (waterSensorState3 == LOW); {
+    tft.drawRect(98, 250, 47, 27, YELLOW);                  // FILLS THE THIRD WATER METER 
+    }
+  if (waterSensorState4 == HIGH){
+    tft.fillRect(149, 252, 43, 23, BLACK);                  // CLEARS THE FOURTH WATER METER
+    }     
+    else if (waterSensorState4 == LOW); {
+    tft.drawRect(147, 250, 47, 27, ORANGE1);                // FILLS THE FOURTH WATER METER            
+    }
+  if (waterSensorState5 == HIGH){                           
+    tft.fillRect(198, 252, 43, 23, BLACK);                  // CLEARS THE FIFTH WATER METER
+    }      
+    else if (waterSensorState5 == LOW); {
+    tft.drawRect(196, 250, 47, 27, RED);                    // FILLS THE FIFTH WATER METER
+  }
