@@ -36,11 +36,11 @@ enum BuzzerState {
 BuzzerState currentBuzzerState = BUZZER_OFF;
 
 const char* ssid = "Your SSID here";                      // WIFI SSID
-const char* password = "wifi password";       // WIFI PASSWORD
-String town = "JURUPA VALLEY";                          // CITY
-String Country = "US";                                  // COUNTRY
+const char* password = "wifi password";                   // WIFI PASSWORD
+String town = "Your city here";                           // CITY
+String Country = "Your Country Here";                     // COUNTRY
 const String endpoint = "https://api.openweathermap.org/data/2.5/weather?q=" + town + "," + Country + "&units=imperial&APPID=";
-const String apiKey = "1fb54425d2eb8c0128dc5b5c623139c2";     // WEATHER API KEY
+const String apiKey = "Your OpenWeather API here";         // WEATHER API KEY
 
 const char* ntpServer = "us.pool.ntp.org";                    // TIME SERVER                   
 const long gmtOffset_sec = 0;                                 
