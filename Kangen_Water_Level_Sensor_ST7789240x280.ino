@@ -357,7 +357,7 @@ void printLocalTime() {                                                     // D
         tft.setTextColor(ORANGE1, GREY6);
         tft.setTextSize(1);
         centerText(String(temperature) + "F", 123, 60, 120); // Temperature
-        centerText(String(humidity) + "%", 155, 57, 119);   // Humidity
+        centerText(String(humidity) + "%", 158, 55, 117);   // Humidity
         centerText(String(rainProbability), 193, 60, 120); // Rain Probability
         centerText(String(int(windSpeed)), 228, 60, 120); // Wind Speed
 
