@@ -44,14 +44,14 @@ const String apiKey = "Your OpenWeather API here";         // WEATHER API KEY
 
 const char* ntpServer = "us.pool.ntp.org";                    // TIME SERVER                   
 const long gmtOffset_sec = 0;                                 
-const int daylightOffset_sec = -25200;                       
+const int daylightOffset_sec = 0;                       
 
 unsigned long lastTextChangeTime = 0;                         // SETTINGS FOR HOW OFTEN TO UPDATE THE TIME
-const unsigned long textChangeInterval = 1000;
+const unsigned long textChangeInterval = 30000;
 unsigned long lastTimeUpdate = 0;
-const unsigned long updateTimeInterval = 1000;                // 1 SECOND INTERVAL
+const unsigned long updateTimeInterval = 30000;                // 1 SECOND INTERVAL
 unsigned long lastWeatherUpdate = 0;
-const unsigned long weatherUpdateInterval = 60000;            // 1 MINUTE INTERVAL SETTINGS FOR HOW OFTEN TO UPDATE THE WEATHER
+const unsigned long weatherUpdateInterval = 300000;            // 1 MINUTE INTERVAL SETTINGS FOR HOW OFTEN TO UPDATE THE WEATHER
 
 void updateTimeCallback(void* arg) {                          // FUNCTION TO UPDATE TIME
   printLocalTime();
